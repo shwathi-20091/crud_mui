@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -61,8 +61,7 @@ function App() {
         let data={
           id:uuidv4(),
         Title,Author,Publisher,Description,Price};
-    
-    //setCounter(counter+1);
+   
     setItems([...items,data]);
   }
   else if (status==="edit"){//if the status is edit,the previous value is edited and saved back to the same card
